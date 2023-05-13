@@ -6,34 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMSSAS</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./custom.css">
 </head>
 <body>
 
     <header>
-        <nav class="flex justify-between bg-black text-white">
+        <!-- <nav class="md:fixed left-0 right-0 flex flex-col md:flex-row justify-between bg-black text-white">
             <a class="flex justify-center items-center ml-2" href="index.html">
                 <img class="w-12" src="./img/logo.png" alt="logo">
             </a>
-            <ul class="flex items-center">
-                <li class="uppercase mx-8 p-5 font-bold hover:bg-white hover:text-black">
+            <ul class="flex flex-col md:flex-row items-center">
+                <li class="uppercase mx-8 p-1 md:p-5 font-bold hover:bg-white hover:text-black">
                     <a href="#">Characters</a>
                 </li>
-                <li class="uppercase mx-8 p-5 font-bold hover:bg-white hover:text-black">
+                <li class="uppercase mx-8 p-1 md:p-5 font-bold hover:bg-white hover:text-black">
                     <a href="#">Locations</a>
                 </li>
-                <li class="uppercase mx-8 p-5 font-bold hover:bg-white hover:text-black">
+                <li class="uppercase mx-8 p-1 md:p-5 font-bold hover:bg-white hover:text-black">
                     <a href="#">Episodes</a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
+        
+        <section class="hero -m-2 ">
+            <div class="flex flex-col justify-center items-center p-5 mt-2">
+                <h1 class="text-4xl font-bold">Rick and Morty</h1>
+                <h2 class="text-2xl">The Szechuan Sauce Appreciation Society</h2>
+            </div>
     
-        <div class="flex flex-col justify-center items-center p-5 mt-2">
-            <h1 class="text-4xl">The Rick and Morty</h1>
-            <h2 class="text-2xl">Szechuan Sauce Appreciation Society</h2>
-        </div>
+            <div class="max-w-lg mx-auto ">
+                <form id="form" class="">
+                    <div>
+                        <input 
+                            type="text"
+                            class="mt-3 rounded w-full p-2 "
+                            placeholder="Wubba Lubba Dub Dub"
+                            id="input-user"
+                        />
+        
+                        <input 
+                            type="submit"
+                            value="Look Morty! i'm a button! I'm button Riiick!!!"
+                            class="mt-5 w-full py-2 bg-green-400 cursor-pointer font-bold hover:bg-green-500 rounded"
+                        >   
+                    </div>
+                </form>
+            </div>
+        </section>
+        
 
     </header>
 
+    <div class="container">
+
+    </div>
 
 
    <script src="./script.js"></script>
